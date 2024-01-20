@@ -5,7 +5,12 @@
   "projects": {
     "eventos": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "standalone": true,
+          "style": "css"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -25,6 +30,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": [],
@@ -96,5 +102,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "998122d2-bdb0-4f1e-85dd-d51e37d66469"
   }
 }
